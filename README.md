@@ -45,3 +45,14 @@ Tasky is a simple app made with Flutter. It helps you keep track of your tasks, 
 - lib/notes_screen.dart: The notes list.
 - lib/counter_screen.dart: The counter screen.
 - lib/task_form_screen.dart: The screen to add or change items.
+
+
+State Management (Provider)
+
+This app uses Provider for managing state in a clean and simple way. It helps handle tasks, notes, and counter data more efficiently and keeps the UI updated automatically when changes happen.
+
+Features
+Saves on phone: Everything is saved so it does not go away when you close the app.
+Pick colors: You can choose different colors for your items.
+Login screen: It has a login and a reset password screen.
+Separate parts: Tasks and notes are in different screens.

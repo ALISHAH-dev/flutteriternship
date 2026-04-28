@@ -1,12 +1,15 @@
-import 'package:basicproject/dashboard_screen.dart';
-import 'package:basicproject/notes_screen.dart';
-import 'package:basicproject/task_form_screen.dart';
-import 'package:basicproject/todo_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'task_provider.dart';
 import 'splash_screen.dart';
 
 void main() {
-  runApp(const TaskyApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (context) => TaskProvider(),
+      child: const TaskyApp(),
+    ),
+  );
 }
 
 class TaskyApp extends StatelessWidget {
@@ -26,7 +29,7 @@ class TaskyApp extends StatelessWidget {
           brightness: Brightness.dark,
         ),
       ),
-      home: const  DashboardScreen()
+      home: const SplashScreen(),
     );
   }
 }

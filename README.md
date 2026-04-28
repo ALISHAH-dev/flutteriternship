@@ -1,35 +1,47 @@
 # Tasky
 
-Tasky is a simple and clean task management app built with Flutter. It's designed to help you organize your daily  tasks with a modern ui and good color selection
+Tasky is a simple app made with Flutter. It helps you keep track of your tasks, notes, and counts. It has a nice look and you can pick different colors.
 
- # (   How the App Works )
+# ( How the App Works )
 
-1.  Splash Screen: When you open the app, you'll see a quick splash screen for a few seconds.
-2.  Login: You'll be taken to a login screen. Enter your details to get into the app.
-3.  Home Dashboard: This is where all your notes are displayed. You can see a list of cards showing your task titles and descriptions.
-4.  Adding a Task: Click the + button at the bottom. It opens a new screen where you can type your title, add a description, and pick a color for that specific task.
-5.  Editing & Deleting : If you want to change something, just tap the edit icon on the card. To remove a task, hit the delete icon.
-6.  Search: If you have a lot of notes, use the search bar at the top to find what you're looking for by title.
+1. Splash Screen: When you open the app, you see a quick screen for a few seconds.
+2. Login: You go to a login screen. Put in your details to enter the app.
+3. Dashboard: This is the main menu. You can pick Tasks, Notes, or the Counter.
+4. Tasks App:
+   - Home Screen: See all your tasks in a list with bright borders.
+   - Checkbox: Click the box to finish a task.
+   - Favorites: Click the star to save important tasks.
+5. Notes App:
+   - Design: Your notes look like cards with the time they were made.
+   - Colors: Pick a color for each note.
+6. Counter App:
+   - Track: A screen to add or subtract numbers. It saves by itself.
+7. Adding and Editing: Click the plus button to make a new one. You can type titles and pick colors.
+8. Deleting: Click the trash icon to remove a task or note.
+9. Search: Use the bar at the top to find your notes by name.
 
 ## Features
 
-- Local Storage: Everything is saved on your phone (using shared_preferences), so your tasks won't disappear when you close the app.
-- Custom Colors: You can pick different colors for each task to keep them organized visually.
-- Authentication UI: Includes a professional login and a forgot password screen.  
+- Saves on phone: Everything is saved so it does not go away when you close the app.
+- Pick colors: You can choose different colors for your items.
+- Login screen: It has a login and a reset password screen.
+- Separate parts: Tasks and notes are in different screens.
 
+## Setup and Run
 
-## Setup & Run
+1. Install Flutter on your computer.
+2. Run flutter pub get in the terminal.
+3. Plug in your phone or start an emulator.
+4. Run the app with: flutter run or click the play button in Android Studio.
 
-1.  Make sure you have all the dependies install that is required to run or app smoothly
-2.  Run `flutter pub get` in the terminal to install the dependencies.
-3.  Connect your device or emulator.
-4.  Run the app using:
-  flutter run or flutter run chrome command and also we can use run button from the top of andriod studio to run it on emulator or a device that is connected 
-to andriod studio 
 ## Files
 
-- `lib/main.dart`: Sets up the app and theme.
-- `lib/splash_screen.dart`: The loading screen.
-- `lib/loginscreen.dart` and  `forgot_password_screen.dart`: The auth screens.
-- `lib/todo_screen.dart`: The main list of tasks.
-- `lib/task_form_screen.dart`: The screen for adding or editing tasks.
+- lib/main.dart: Starts the app.
+- lib/splash_screen.dart: The first screen.
+- lib/loginscreen.dart: The login screen.
+- lib/forgot_password_screen.dart: The password reset screen.
+- lib/dashboard_screen.dart: The main menu.
+- lib/todo_screen.dart: The task list.
+- lib/notes_screen.dart: The notes list.
+- lib/counter_screen.dart: The counter screen.
+- lib/task_form_screen.dart: The screen to add or change items.
